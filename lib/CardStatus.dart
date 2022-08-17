@@ -190,13 +190,13 @@ class _CardStatus extends State<CardStatus> {
                                                         color: Colors.grey,
                                                         fontSize: 13),
                                                   ),
-                                                  Padding(
-                                                    padding: const EdgeInsets
-                                                        .fromLTRB(70, 0, 0, 0),
+                                                  const Padding(
+                                                    padding:
+                                                        EdgeInsets.fromLTRB(
+                                                            47, 0, 0, 0),
                                                     child: Text(
-                                                        _pedidos[index]
-                                                            .dateDelivered,
-                                                        style: const TextStyle(
+                                                        'Data de Entrega',
+                                                        style: TextStyle(
                                                             fontWeight:
                                                                 FontWeight.w600,
                                                             color: Colors.grey,
@@ -220,6 +220,17 @@ class _CardStatus extends State<CardStatus> {
                                                         fontWeight:
                                                             FontWeight.bold),
                                                   ),
+                                                  Padding(
+                                                    padding: const EdgeInsets
+                                                        .fromLTRB(167, 0, 0, 0),
+                                                    child: Text(
+                                                        _pedidos[index]
+                                                            .dateDelivered,
+                                                        style: const TextStyle(
+                                                            fontWeight:
+                                                                FontWeight
+                                                                    .bold)),
+                                                  )
                                                 ],
                                               ),
                                             ),
